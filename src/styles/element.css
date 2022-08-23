@@ -1,0 +1,24 @@
+.el-menu {
+  /* fix 引入element plus 背景为白色 */
+  background-color: transparent; 
+  /* fix 引入element plus border-right-width 为 1 */
+  border-right-width: 0;
+}
+
+.el-aside {
+  width: auto;
+  border-right-width: 1px;
+  border-right-color: rgba(107,114,128,0.2);
+}
+
+.el-aside::-webkit-scrollbar {
+  display: none;
+}
+
+.el-menu-item:hover {
+  background-color: rgba(107,114,128,0.2);
+}
+
+.el-divider--horizontal{
+  border-top: 1px rgba(107,114,128,0.2) solid;
+}

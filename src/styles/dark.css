@@ -1,0 +1,19 @@
+html.dark {
+  background: rgb(18, 18, 18);
+}
+
+.el-menu-item, .el-progress__text, .el-divider__text {
+  color:rgb(55, 65, 81)
+}
+
+html.dark .el-menu-item, html.dark .el-progress__text, html.dark .el-divider__text {
+  color: rgb(229, 231, 235)
+}
+
+.el-divider__text {
+  background-color: white;
+}
+
+html.dark .el-divider__text {
+  background-color: rgb(18, 18, 18);
+}

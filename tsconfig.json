@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "module": "ESNext",
+    "target": "es2016",
+    "lib": ["DOM", "ESNext"],
+    "jsx": "preserve",
+    "strict": true, // 启用所有严格的类型检查选项
+    "esModuleInterop": true,
+    "incremental": false, // 启用增量编译
+    "skipLibCheck": true, // 跳过类型检查所有.d.ts文件
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "noUnusedLocals": true,
+    "strictNullChecks": true, // 在进行类型检查时，要考虑null和undefined
+    "forceConsistentCasingInFileNames": true,
+    // 指定要包含而不在源文件中引用的类型包名称
+    "types": [
+      "vite/client",
+      "vite-plugin-pages/client"
+    ],
+    "paths": {
+      "@/*": ["src/*"],
+      "~/*": ["types/*"]
+    }
+  },
+  "exclude": ["dist", "node_modules"]
+}

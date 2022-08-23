@@ -1,0 +1,26 @@
+@import url(./element.css);
+@import url(./dark.css);
+
+:root {
+  --nav-side-width: 180px;
+}
+
+html,
+body,
+#app,
+.el-container,
+.n-menu {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.n-menu svg {
+  margin-right: 4px;
+  width: 1em;
+  height: 1em;
+}
+
+.n-menu:not(.el-menu--collapse) {
+  width: var(--nav-side-width);
+}
