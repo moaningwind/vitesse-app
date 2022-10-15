@@ -10,9 +10,6 @@ import Components from 'unplugin-vue-components/vite'
 import AutoImport from 'unplugin-auto-import/vite'
 import Unocss from 'unocss/vite'
 
-const localEnabled: boolean = (process.env.USE_MOCK as unknown as boolean) || false
-const prodEnabled: boolean = (process.env.USE_CHUNK_MOCK as unknown as boolean) || false
-
 export default defineConfig({
   resolve: {
     alias: {
@@ -29,11 +26,7 @@ export default defineConfig({
 
     // https://www.npmjs.com/package/vite-plugin-mock
     viteMockServe({
-      mockPath: '/mock',
-      localEnabled,
-      prodEnabled,
-      supportTs: true,
-      watchFiles: true,
+      localEnabled: true,
     }),
 
     // https://github.com/hannoeru/vite-plugin-pages

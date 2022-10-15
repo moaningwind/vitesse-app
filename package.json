@@ -1,9 +1,9 @@
 {
   "private": true,
-  "packageManager": "pnpm@6.32.3",
+  "packageManager": "pnpm@7.13.4",
   "scripts": {
     "build": "vite build",
-    "dev": "cross-env USE_MOCK=true vite --port 3333 --open",
+    "dev": "vite --port 3333 --open",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "typecheck": "vue-tsc --noEmit",
@@ -29,11 +29,9 @@
     "@vitejs/plugin-vue": "^2.3.2",
     "@vitejs/plugin-vue-jsx": "^1.3.10",
     "@vue/test-utils": "^2.0.0-rc.21",
-    "cross-env": "^7.0.3",
     "eslint": "^8.15.0",
     "jsdom": "^19.0.0",
     "mockjs": "^1.1.0",
-    "pnpm": "^6.32.12",
     "rollup": "^2.72.1",
     "typescript": "^4.6.4",
     "unocss": "^0.27.6",
